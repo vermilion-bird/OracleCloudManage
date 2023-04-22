@@ -1,0 +1,4 @@
+/conf/file/*.pem
+/conf/config.yaml
+__pycache__
+telegram_sdk

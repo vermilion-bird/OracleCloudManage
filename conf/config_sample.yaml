@@ -1,0 +1,22 @@
+notion:
+  token: secret_*
+  name: 'notion_bot'
+  database_id: "2170*sba8f1****3f5cd24"
+
+accounts:
+# account 1
+- 
+  user: "ocid1.user.oc**"
+  fingerprint: "39:a7:88:fe**"
+  tenancy: "ocid1.tenancy.oc1..a**"
+  region: "ap-chuncheon-1"
+  compartment_id: "ocid1.tenancy.o***"
+  key_file: "oracleidentitycloudservi***.pem"
+#account 2
+- 
+  user: "ocid1.user.oc**"
+  fingerprint: "39:a7:88:fe**"
+  tenancy: "ocid1.tenancy.oc1..a**"
+  region: "ap-chuncheon-1"
+  compartment_id: "ocid1.tenancy.o***"
+  key_file: "oracleidentitycloudservi***.pem"
