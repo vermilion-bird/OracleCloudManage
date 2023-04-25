@@ -57,7 +57,8 @@ def get_instance_from_account() -> list:
                 "region": instance.region,
                 "display_name": instance.display_name,
                 "time_created": instance.time_created.strftime("%Y-%m-%d %H:%M:%S"),
-                "lifecycle_state": instance.lifecycle_state
+                "lifecycle_state": instance.lifecycle_state,
+                "processor_description": instance.shape_config.processor_description
             })
             res.append(oi)
             print("Instance ID: {}, Instance Name: {}".format(

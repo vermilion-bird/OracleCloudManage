@@ -70,6 +70,12 @@ def construct_instance(instance):
                         'text': {'content': instance.ip},
                         'plain_text': instance.ip}]
         },
+        'processor_description': {
+            'rich_text': [{
+                'type': 'text',
+                        'text': {'content': instance.processor_description},
+                        'plain_text': instance.processor_description}]
+        },
     }}
     return properties
 

@@ -2,3 +2,5 @@
 /conf/config.yaml
 __pycache__
 telegram_sdk
+venv
+log*
