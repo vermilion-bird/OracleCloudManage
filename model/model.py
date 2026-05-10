@@ -1,8 +1,18 @@
+from dataclasses import dataclass, field, asdict
+
+
+@dataclass
 class OracleInstance:
-    def __init__(self, **kwargs) -> None:
-        self.ip = kwargs.get("ip", "")
-        self.region = kwargs.get("region", "")
-        self.display_name = kwargs.get("display_name", "")
-        self.time_created = kwargs.get("time_created", "")
-        self.lifecycle_state = kwargs.get("lifecycle_state", "")
-        self.processor_description= kwargs.get("processor_description", "")
+    """Oracle Cloud 实例数据模型"""
+    ip: str = ""
+    region: str = ""
+    display_name: str = ""
+    time_created: str = ""
+    lifecycle_state: str = ""
+    processor_description: str = ""
+    instance_id: str = ""
+    account_index: int | None = None
+
+    def to_dict(self) -> dict:
+        """转换为字典格式"""
+        return asdict(self)
